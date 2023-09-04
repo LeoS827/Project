@@ -5,6 +5,7 @@ from django.test import Client
 from django.contrib.auth.models import User, Permission, Group
 from django.contrib.contenttypes.models import ContentType
 from schedule.models import Person, Schedule, Shift
+from django.conf import settings
 
 
 @pytest.fixture
