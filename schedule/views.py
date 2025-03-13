@@ -542,7 +542,7 @@ class PrintPDFView(View):
                     if slot.date == d:
                         row.append(slot.person) if slot.person else row.append('-------')
             data.append(row)
-        # ---------->
+        # ------------>
         html = None
         response = HttpResponse(content_type='application/pdf')
         response['Content-Disposition'] = f'filename="report.pdf"'
