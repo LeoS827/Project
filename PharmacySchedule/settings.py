@@ -81,8 +81,8 @@ DATABASES = {
         'HOST': '127.0.0.1',
         'NAME': 'schedule_db',
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'USER': 'postgres',
-        'PASSWORD': 'coderslab',
+        'USER': os.environ['POSTGRES_USER'],
+        'PASSWORD': os.environ['POSTGRES_PASS'],
     },
     'default2': {
         'ENGINE': 'django.db.backends.sqlite3',
