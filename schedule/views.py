@@ -10,7 +10,7 @@ from django.template.loader import get_template
 import datetime
 from xhtml2pdf import pisa
 
-DAYS = ('pn', 'wt', 'śr', 'cz', 'pt', 'sb', 'nd')
+DAYS = ('pn', 'wt', 'sr', 'cz', 'pt', 'sb', 'nd')
 
 
 class IndexView(LoginRequiredMixin, View):
